@@ -1,6 +1,6 @@
 # CS:GO Configs
 
-An collection of my stripper configs for non-ZE CS:GO maps. Any ZE stripper additions and/or edits I do can be found on [GFL's Github Repo](https://github.com/gflclan-cs-go-ze/ZE-Configs).
+An collection of my stripper configs for non-ZE CS:GO maps. Any ZE stripper additions and/or edits I do can be found on [GFL's Github Repo](https://github.com/gflclan-cs-go-ze/ZE-Configs/commits?author=Frozen-H2O).
 
 ## How to Report Map or Stripper Bugs
 
