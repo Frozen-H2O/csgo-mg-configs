@@ -1,14 +1,23 @@
 # CS:GO Configs
 
-An collection of my stripper configs for non-ZE CS:GO maps. Any ZE stripper additions and/or edits I do can be found on [GFL's Github Repo](https://github.com/gflclan-cs-go-ze/ZE-Configs/commits?author=Frozen-H2O).
+A collection of my stripper and map setting configuration files for CS:GO maps of or relating to the Minigames gamemode.
 
-## How to Report Map or Stripper Bugs
+## How to Report Map or Config Bugs
 
-Simply open an issue on this github repository with the bug in question. Please include the full map name in the issue's name, whether it is a map bug or bug with existing stripper config, and follow the template for map bugs.
+Simply open an issue on this github repository with the bug in question. Please include the full map name in the issue's name, whether it is a map bug or bug with existing config, and follow the template for map bugs.
 
-## How to Contribute
+## How to Contribute for Map Configs
 
-For making any of these configs, you will need knowledge of how to use CS:GO's hammer editor. You will also want a tool like [VIDE](http://www.riintouge.com/VIDE/)'s entity lump editor, or [entSpy](https://gamebanana.com/tools/5876) to view a map's entity logic. In addition, you may need a tool like [BspSrc](https://github.com/ata4/bspsrc/releases) to decompile a map's bsp to get it's vmf if you wish to open the map directly in the hammer editor. You can also compare maps with current configs in this repository and see how past stripper fixes have been done if you're looking for functional examples of things.
+For making any map-cfg configs, you simply need to add a csgo setting on its own line. This is primarily for ConVars that are not whitelisted in bspconvar_whitelist.txt or that are locked/hidden and require sm_cvar to change, but may also be used to easily change whitelisted CVars the map needs but has not set itself.
+Load order for the configs is as follows:
+**autoexec.cfg** - On server start.
+**server.cfg** - On map change.
+***map*.cfg** - [OnAutoConfigsBuffered](https://sourcemod.dev/#/sourcemod/function.OnAutoConfigsBuffered)
+***map*.post.cfg** - [OnConfigsExecuted](https://sourcemod.dev/#/sourcemod/function.OnConfigsExecuted)
+
+## How to Contribute for Stripper Configs
+
+For making configs, you will most likely need knowledge of how to use CS:GO's hammer editor. You will also want a tool like [VIDE](http://www.riintouge.com/VIDE/)'s entity lump editor, or [entSpy](https://gamebanana.com/tools/5876) to view a map's entity logic. In addition, you may need a tool like [BspSrc](https://github.com/ata4/bspsrc/releases) to decompile a map's bsp to get it's vmf if you wish to open the map directly in the hammer editor. You can also compare maps with current strigger configs in this repository and see how past fixes have been done if you're looking for functional examples of things.
 
 **_IMPORTANT:_** Make sure the filename of the config matches the exact map name on the server.
 
@@ -16,14 +25,13 @@ For making any of these configs, you will need knowledge of how to use CS:GO's h
 
 Stripper: Source is quite a complicated plugin, but essentially boils down to being the hammer editor in text form. If you're looking for a good starting point to learn how to make Stripper: Source configs, you can check out [the official documentation](https://www.bailopan.net/stripper/) or [this tutorial](https://gflclan.com/forums/topic/47449-stripper-cfgs-guide/). If you have any questions regarding stripper creation you can always join the [#mapping channel](https://discord.gg/zh2CVSM) on the GFLClan Zombie Escape Discord for assistance.
 
-## Syntax
+## Stripper Syntax
 In order to try and keep stripper files consistant, the following syntax should try to be maintained:
 - Use // for comments instead of ;, #, or \0
 - Use "filter:" instead of "remove:" to delete entities from the map
 - List all changes and bug fixes at the top of the file in a change block if there are multiple fixes in the file
 - Put brackets {} on their own lines
 - Use tabs at the start of lines for spacing and spaces for any spacing in the middle of lines (ie. ____"classname"++++++"logic_auto" should have _ replaced with tabs and + replaced with spaces)
-- All say commands issued to a point_servercommand should have two asterisks ** around their message, regardless of the map's original message formatting. (ie. "console,Command,say ** Example **,0,-1")
 
 ## Collection of links
 - [VS Code extension for Source Engine highlighting](https://marketplace.visualstudio.com/items?itemName=Azashii.csgo-map-config-highlighting)
