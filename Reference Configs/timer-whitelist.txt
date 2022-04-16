@@ -1,0 +1,26 @@
+//All course maps should be listed here, as only these maps will have the timer plugin loaded for them
+mg_100traps_v4_1_nc1
+mg_acrophobia_run_v1
+mg_airmap_run_v2
+mg_antique_course
+mg_azure
+mg_bob2_nc1
+mg_cartoon_course_v3_1_hdr
+mg_cyber_course_v6
+mg_damons_course_v1
+mg_dicore_course_fix1
+mg_draw_course_v2_hdr
+mg_enicourse_v1
+mg_galaxy_course_csgo_nc1
+mg_kegs_course_v3_fixed3_nc1
+mg_kirbys_course_go
+mg_kohztec_course_hdr
+mg_lego_course_2_v3
+mg_line_course_v1
+mg_minecraft_adventure_hdr
+mg_neon_go_course
+mg_savethebacon_course_final_hdr
+mg_saw_3_v1
+mg_skygrass_balkanstar_nc1
+mg_sonic_islands_v4_nc1
+mg_wipeout_course_v1b

@@ -1,0 +1,3 @@
+# Dont track workshop file duplicates
+map-cfgs\workshop
+stripper\maps\workshop

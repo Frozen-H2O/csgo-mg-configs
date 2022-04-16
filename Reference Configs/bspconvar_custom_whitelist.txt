@@ -7,7 +7,6 @@
     say                                                 1
     cs_enable_player_physics_box                        1
     mp_ignore_round_win_conditions                      1
-    mp_roundtime                                        1
     mp_respawn_on_death_t                               1
     mp_respawn_on_death_ct                              1
     mp_anyone_can_pickup_c4                             1
@@ -15,6 +14,7 @@
     mp_buy_allow_guns                                   1    // Bitfield: which weapons can be purchased. pistols (1), SMGs (2), rifles (4), shotguns (8), sniper rifles (16), heavy MGs (32)
     mp_buy_anywhere                                     1
     mp_buy_during_immunity                              1
+    mp_buytime                                          1
     mp_c4_cannot_be_defused                             1
     mp_c4timer                                          1
     mp_consecutive_loss_max                             1    // Maximum loss streak (default 4).  Maximum per-round impact is mp_consecutive_loss_max * cash_team_loser_bonus_consecutive_rounds
@@ -58,6 +58,7 @@
     mp_force_assign_teams                               1
     mp_forcecamera                                      1    // Restricts spectator modes for dead players. 0 = Any team. 1 = Only own team. 2 = No one; fade to black on death (previously mp_fadetoblack).
     mp_free_armor                                       1    // Determines whether armor (1) and/or helmet (2) are given automatically.
+    mp_friendlyfire                                     1
     mp_ggprogressive_round_restart_delay                1
     mp_ggtr_always_upgrade                              1
     mp_ggtr_bomb_defuse_bonus                           1
@@ -95,8 +96,11 @@
     mp_randomspawn                                      1    // Determines whether players are to spawn.        0 = default; 1 = both teams; 2 = Terrorists; 3 = CTs.
     mp_randomspawn_dist                                 1
     mp_randomspawn_los                                  1
-    mp_solid_teammates                                  1    // Determines whether teammates are solid or not.
+    mp_roundtime                                        1
+    mp_roundtime_defuse                                 1
+    mp_roundtime_hostage                                1
     mp_starting_losses                                  1    // Loss streak to start each team with (default 0).  Results in the first round being worth additional cash for the losing team
+    mp_startmoney                                       1
     mp_tagging_scale                                    1    // Scalar for player tagging modifier when hit. Lower values for greater tagging.
     mp_t_default_grenades                               1    // The default grenades that the CTs will spawn with.  To give multiple grenades, separate each weapon class with a space like this: 'weapon_molotov weapon_hegrenade'
     mp_t_default_melee                                  1    // The default melee weapon that the Ts will spawn with.  Even if this is blank, a knife will be given.  To give a taser, it should look like this: 'weapon_knife weapon_taser'.  Remember to set mp_weapons_allow_zeus to 1 if you want to give a taser!
@@ -105,6 +109,7 @@
     mp_taser_recharge_time                              1    // How many seconds does it take for a taser to recharge ( -1 = never )
     mp_teamcashawards                                   1    // Teams can earn money by performing in-game actions
     mp_teammates_are_enemies                            1    // When set, your teammates act as enemies and all players are valid targets.
+    mp_warmup_end                                       1
     mp_weapons_allow_heavy                              1    // Determines which teams can purchase heavy weapons (-1 = any; 0 = none; 2 = Ts; 3 = CTs)
     mp_weapons_allow_heavyassaultsuit                   1    // Determines whether the Heavy Assault Suit is purchaseable or not (T only)
     mp_weapons_allow_map_placed                         1    // If this convar is set, when a match starts, the game will not delete weapons placed in the map.
@@ -135,7 +140,6 @@
     sv_arms_race_vote_to_restart_disallowed_after       1
     sv_auto_adjust_bot_difficulty                       1
     sv_auto_full_alltalk_during_warmup_half_end         1    // When enabled, full alltalk is enabled at warmup, halftime and endgame
-    sv_autobunnyhopping                                 1    // Automatically jumps when touching ground
     sv_autobuyammo                                      1
     sv_bot_buy_decoy_weight                             1
     sv_bot_buy_flash_weight                             1
@@ -150,7 +154,6 @@
     sv_buy_status_override                              1    // Override for buy status map info. 0 = everyone can buy, 1 = ct only, 2 = t only 3 = nobody
     sv_disable_immunity_alpha                           1
     sv_duplicate_playernames_ok                         1
-    sv_enablebunnyhopping                               1    // Disables in-air movement speed cap
     sv_env_entity_makers_enabled                        1
     sv_extract_ammo_from_dropped_weapons                1
     sv_falldamage_scale                                 1
@@ -187,4 +190,8 @@
     weapon_recoil_scale                                 1
     weapon_reticle_knife_show                           1
     weapon_sound_falloff_multiplier                     1
+    "mg_thc_lego_multimap_v5"
+    {
+        sv_disable_radar                                1
+    }
 }
