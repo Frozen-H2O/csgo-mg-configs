@@ -31,7 +31,7 @@ In order to try and keep stripper files consistant, the following syntax should 
 - Use "filter:" instead of "remove:" to delete entities from the map
 - List all changes and bug fixes at the top of the file in a change block if there are multiple fixes in the file
 - Put brackets {} on their own lines
-- Use tabs at the start of lines for spacing and spaces for any spacing in the middle of lines (ie. ____"classname"++++++"logic_auto" should have _ replaced with tabs and + replaced with spaces)
+- Use spaces instead of tabs
 
 ## Collection of links
 - [VS Code extension for Source Engine highlighting](https://marketplace.visualstudio.com/items?itemName=Azashii.csgo-map-config-highlighting)

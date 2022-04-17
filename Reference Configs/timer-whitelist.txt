@@ -1,4 +1,4 @@
-//All course maps should be listed here, as only these maps will have the timer plugin loaded for them
+// All course maps should be listed here, as only these maps will have the timer plugin loaded for them
 mg_100traps_v4_1_nc1
 mg_acrophobia_run_v1
 mg_airmap_run_v2
