@@ -4,7 +4,7 @@ mg_50arenas_v2_3_nc2                // https://fastdlv2.gflclan.com/file/gflfast
 mg_acrophobia_run_v1                // https://gamebanana.com/dl/297153
 mg_airmap_run_v2                    // https://gamebanana.com/dl/292701
 mg_antique_course                   // https://gamebanana.com/dl/285574
-mg_arcs_multigames_csgo_v2_nc3      // https://fastdlv2.gflclan.com/file/gflfastdlv2/csgo/maps/mg_arcs_multigames_csgo_v2_nc3.bsp.bz2
+mg_arcs_multigames_v4               // https://gamebanana.com/dl/758484
 mg_awp_multigames_fix_go_v1         // https://fastdlv2.gflclan.com/file/gflfastdlv2/csgo/maps/mg_awp_multigames_fix_go_v1.bsp.bz2
 mg_awp_submarine_v4csgo_nc1         // https://fastdlv2.gflclan.com/file/gflfastdlv2/csgo/maps/mg_awp_submarine_v4csgo_nc1.bsp.bz2
 mg_azure                            // https://gamebanana.com/dl/281565
