@@ -10,10 +10,10 @@ Simply open an issue on this github repository with the bug in question. Please 
 
 For making any map-cfg configs, you simply need to add a csgo setting on its own line. This is primarily for ConVars that are not whitelisted in bspconvar_whitelist.txt or that are locked/hidden and require sm_cvar to change, but may also be used to easily change whitelisted CVars the map needs but has not set itself.
 Load order for the configs is as follows:
-**autoexec.cfg** - On server start.
-**server.cfg** - On map change.
-***map*.cfg** - [OnAutoConfigsBuffered](https://sourcemod.dev/#/sourcemod/function.OnAutoConfigsBuffered)
-***map*.post.cfg** - [OnConfigsExecuted](https://sourcemod.dev/#/sourcemod/function.OnConfigsExecuted)
+- **[autoexec.cfg](Reference%20Configs/autoexec.cfg)** - On server start.
+- **[server.cfg](Reference%20Configs/server.cfg)** - On map change.
+- ***map*.cfg** - [OnAutoConfigsBuffered](https://sourcemod.dev/#/sourcemod/function.OnAutoConfigsBuffered)
+- ***map*.post.cfg** - [OnConfigsExecuted](https://sourcemod.dev/#/sourcemod/function.OnConfigsExecuted)
 
 ## How to Contribute for Stripper Configs
 
