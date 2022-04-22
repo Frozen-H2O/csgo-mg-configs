@@ -17,7 +17,7 @@ mg_damons_multiarenas               // https://gamebanana.com/dl/421853
 mg_dicore_course_fix1               // https://gamebanana.com/dl/273542
 mg_draw_course_v2_hdr               // https://www.dropbox.com/s/k7xzgmq4jus4kgy/mg_draw_course_v2_hdr.bsp?dl=1
 mg_enicourse_v1                     // https://fastdlv2.gflclan.com/file/gflfastdlv2/csgo/maps/mg_enicourse_v1.bsp.bz2
-mg_eparlana_multigame_csgo_v2_nc2   // https://fastdlv2.gflclan.com/file/gflfastdlv2/csgo/maps/mg_eparlana_multigame_csgo_v2_nc2.bsp.bz2
+mg_eparlana_multigame_v4            // https://gamebanana.com/dl/726031
 mg_galaxy_course_csgo_nc1           // https://fastdlv2.gflclan.com/file/gflfastdlv2/csgo/maps/mg_galaxy_course_csgo_nc1.bsp.bz2
 mg_galaxy_multigames_v5_nc2         // https://fastdlv2.gflclan.com/file/gflfastdlv2/csgo/maps/mg_galaxy_multigames_v5_nc2.bsp.bz2
 mg_jacs_multigame_v1fix             // https://fastdlv2.gflclan.com/file/gflfastdlv2/csgo/maps/mg_jacs_multigame_v1fix.bsp.bz2
