@@ -1,3 +1,5 @@
+Due to the update from Valve to Source 2, this repository is no longer relevant. It will be kept up as a reference archive for other Source 1 games.
+
 # CS:GO Configs
 
 A collection of my stripper and map setting configuration files for CS:GO maps of or relating to the Minigames gamemode.
